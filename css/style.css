@@ -1,6 +1,6 @@
 body {
     font-family: "PT Sans Narrow", "Arial";
-    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
     line-height: 18px;
     color: black;
@@ -9,6 +9,7 @@ body {
     padding: 0;
     min-width: 1200;
     min-height: 1750;
+    background-image: url(../img/index/texture.jpg)
 }
 h1 {
     font-size: 30px;
@@ -29,6 +30,13 @@ a {
     display: inline-block;
     vertical-align: middle;
 }
+.main-navigation-list>li {
+    padding: 0 15px;
+    font-size: 16px;
+    margin-right: 9px;
+    padding-top: 37px;
+    padding-bottom: 14px;
+}
 .container {
     background-color: #6768e1;
     width: 940px;
@@ -38,27 +46,28 @@ a {
 .main-header {
     width: 100%;
     background-color: black;
-    margin-bottom: 55px;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    margin-bottom: 51px;
+    padding-top: 0;
+    padding-bottom: 0px;
 }
 .logo {
     float: left;
-    margin-left: 15px;
-    margin-right: 30px;
-    margin-top: 15px
-    
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-top: 48px
 }
 .main-navigation {
     background-color: black;
     float: left;
-    width: 710px;
+    width: 740px;
 }
 .user-block {
-    background-color: #e3e26a;
+    background-color: black;
     float: right;
-    width: 140px;
-    margin-top: 15px;
+    text-align: center;
+    padding: 15px 18px;
+    margin-top: 36px;
+    font-size: 16px;
 }
 .clearfix::after {
   content: "";
@@ -127,7 +136,7 @@ h1 {
     margin-top: 10px;
 }
 .item-price {
-    width: 193px;
+    width: 190px;
     display: inline-block;
     font-size: 0;
     margin-bottom: 50px;
@@ -136,14 +145,19 @@ h1 {
     margin-bottom: 35px;
 }
 .item-price-rub {
-    padding: 15px 30px;
     background-color: #e5e5e5;
     font-size: 14px;
+    float: left;
+    text-align: center;
+    width: 109px;
+    padding: 12px 0;
 }
 .item-price-button {
-    padding: 15px 20px;
+    display: block;
+    text-align: center;
     background-color: black;
     font-size: 14px;
+    padding: 12px 0;
 }
 .item-set-list {
     margin-left: 20px;
@@ -177,31 +191,82 @@ h1 {
 .catalog-pick    {
     float: left;
     clear: both;
-    width: 170px;
+    width: 175px;
     background-color: #e065e1;
-    margin-right: 50px;
+    margin-right: 60px;
+    font-size: 14px;
+}
+input[type="checkbox"] + label {
+    display: inline-block;
+    background: url(../img/shop/checkbox-off.png) no-repeat 1px;
+    width: 125px;
+    padding: 9px 0;
+    margin-bottom: 1px;
+    padding-left: 45px
+}
+input[type="checkbox"] + label:last-child {
+    margin-bottom: 45px;
+}
+input[type="checkbox"]:checked + label {
+    background: url(../img/shop/checkbox-on.png) no-repeat 1px;
+}
+input[type="radio"] + label {
+    display: inline-block;
+    background: url(../img/shop/radio-off.png) no-repeat 1px;
+    width: 125px;
+    padding: 9px 0;
+    margin-bottom: 1px;
+    padding-left: 45px
+}
+input[type="radio"]:checked + label {
+    background: url(../img/shop/radio-on.png) no-repeat 1px;
+}
+input {
+    display: none;
+}
+input[type="submit"] {
+    display: block;
+    padding: 14px 29px 14px 34px;
+    margin-top: 40px;
+    background: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    border: none;
+    
+}
+.pick-container>h2 {
+    padding: 0px;
+    margin: -5px 1px;
+    margin-bottom: 20px;
+    clear: both;
 }
 .catalog-items {
     float: right;
-    width: 720px;
+    width: 700px;
+    font-size: 0px; 
 }
 .item {
     display: inline-block;
     vertical-align: top;
     width: 220px;
-    height: 290px;
+    height: 285px;
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: white;
 }
 .item:nth-child(3n+3) {
-    margin-right: 0px;
+    margin: 0px;
 }
 .item-name {
     width: 170px;
-    height: 60px;
-    padding: 14px;
-    padding-bottom: 0px;
+    height: 45px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-bottom: 3px;
+    font-size: 14px;
+    text-transform: none;
 }
 .item-name>a {
     color: black;
